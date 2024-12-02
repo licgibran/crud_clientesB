@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Clientes </title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'clientes/style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h2>¿Está seguro de querer eliminar al cliente ---? </h2>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </body>

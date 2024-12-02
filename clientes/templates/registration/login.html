@@ -1,0 +1,8 @@
+<h2> Iniciar sesión</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type="submit">Iniciar sesión</button>
+</form>
+
+<a class="btn" href="{% url 'cliente_list' %}" >Ver clientes</a>

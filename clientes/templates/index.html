@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> XBurg Web </title>
+    <!-- Enlace a archivo CSS -->
+     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'clientes/css/style.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'clientes/css/boxicons.min.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">X<span>Burg</span>er</a>
+        <ul class="navbar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="h-derecha">
+            <a href="#">Síguenos</a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <!-- <i class='bx bxl-whatsapp-square' ></i> -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-text">
+            <h5 id = "typed">Disfruta</h5>
+            <h1>La mejor hamburguesa</h1>
+            <p>La perfección hecha hamburguesa con 100% carne,
+                y deliciosa salsa, <br> todo dentro de un pan son
+                semillas de ajonjolí.
+            </p>
+            <a href="#" id = "btn-pedido" class="btn">Pídela ya</a>
+        </div>
+    </section>
+    <!-- Sección con columnas -->
+
+    <section id ="info" class="columnas">
+        <div data-aos="zoom-in" class="col-content">
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/hamburguesas.jpg' %}" alt="Imagen de una hamburguesa">
+                </div>
+                <h4>Hamburguesas</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/boneless.jpg' %}" alt="Imagen de una boneless">
+                </div>
+                <h4>Boneless</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/combos.jpg' %}" alt="Imagen de un combo">
+                </div>
+                <h4>Combos</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/aperitivos.jpg' %}" alt="Imagen de un aperitivo">
+                </div>
+                <h4>Aperitivos</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/especiales.jpg' %}" alt="Imagen de especiales">
+                </div>
+                <h4>Especiales</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="promociones">
+        <div data-aos="flip-right" class="promo-img">
+            <img src="{% static 'clientes/img/promo.jpg' %}" alt="">
+        </div>
+        <div class="promo-text">
+            <h5> Promo del día</h5>
+            <h2>Solo por hoy</h2>
+            <p>En la compra de 1 combo, el aperitivo va por nuestra cuenta</p>
+            <a href="#" id="btn-promocion" class="btn">Lo quiero</a>
+        </div>
+        
+
+     </section>
+
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="{% static 'clientes/js/script.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
